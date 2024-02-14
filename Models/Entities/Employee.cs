@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using employee_crud_back_.Models.Validations;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
