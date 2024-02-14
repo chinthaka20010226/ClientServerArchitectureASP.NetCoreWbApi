@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "AUl+WdlomCTrZE9TDJWR1wsP0O4+zSoKcYhJaqkVIvfsw83tADCRA6Im477hCFS2MuCrWUsndst4sFVWDAAcZA==",
+  "dgSpecHash": "RSb4WgHZUYMEE4rW4SQZQ7Hg3pUPO6Mi3wdOo3mFiasoh+dT5S9R/6Wvprta/2k98lgU0HPBOxuM3HZWK2ZOxA==",
   "success": true,
   "projectFilePath": "D:\\new____\\project_\\ASP.NetCoreClientServerArchitecture_\\employee_crud_back\\employee_crud_back_\\employee_crud_back_.csproj",
   "expectedPackageFiles": [
@@ -22,6 +22,7 @@
     "C:\\Users\\User\\.nuget\\packages\\microsoft.entityframeworkcore.design\\8.0.1\\microsoft.entityframeworkcore.design.8.0.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.1\\microsoft.entityframeworkcore.relational.8.0.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\8.0.1\\microsoft.entityframeworkcore.sqlserver.8.0.1.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\8.0.1\\microsoft.entityframeworkcore.tools.8.0.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.0\\microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
