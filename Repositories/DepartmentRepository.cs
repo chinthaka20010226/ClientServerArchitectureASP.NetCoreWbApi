@@ -29,6 +29,21 @@ namespace employee_crud_back_.Repositories
             Department.Add(department);
         }
 
+        public void UpdateDepartment(Department department)
+        {
+            Department.Update(department);
+        }
+
+        public async void DeleteDepartment(int id)
+        {
+            var department = await Department.FindAsync(id);
+
+            if (department != null)
+            {
+                Department.Remove(department);
+            }
+        }
+
         public async Task Save()
         {
             await dataContext.SaveChangesAsync();

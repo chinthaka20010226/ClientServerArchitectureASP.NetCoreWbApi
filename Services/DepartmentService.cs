@@ -33,5 +33,35 @@ namespace employee_crud_back_.Services
 
             return insertDepartment ?? throw new NotFoundException($"Department with name {newDepartment.Name} not found");
         }
+
+        public async Task<Department> UpdateDepartment(Department newDepartment)
+        {
+            var departmentToUpdate = await departmentRepository.GetDepartmmentById(newDepartment.Id) ??
+                throw new NotFoundException($"Department with id {newDepartment.Id} not found");
+
+            departmentToUpdate.Name = newDepartment.Name == "" ? departmentToUpdate.Name : newDepartment.Name;
+
+
+            departmentRepository.UpdateDepartment(departmentToUpdate);
+            await departmentRepository.Save();
+
+            return departmentToUpdate;
+        }
+
+        public async Task<Department> DeleteDepartment(int id)
+        {
+            if (id < 0)
+            {
+                throw new InvalidArgumentException("Id must be greater than zero");
+            }
+
+            var departmentToDelete = await departmentRepository.GetDepartmmentById(id) ??
+                throw new NotFoundException($"Department with id {id} not found");
+
+            departmentRepository.DeleteDepartment(id);
+            await departmentRepository.Save();
+
+            return departmentToDelete;
+        }
     }
 }

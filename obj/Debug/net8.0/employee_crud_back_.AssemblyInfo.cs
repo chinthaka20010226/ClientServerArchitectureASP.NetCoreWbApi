@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("employee_crud_back_")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a7ba2208dd325a0e63c9c09f196b1b60f6d8954")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d2134b1e3fa14769290ad27530039199a9fcf3e3")]
 [assembly: System.Reflection.AssemblyProductAttribute("employee_crud_back_")]
 [assembly: System.Reflection.AssemblyTitleAttribute("employee_crud_back_")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

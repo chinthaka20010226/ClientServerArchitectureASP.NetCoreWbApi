@@ -7,9 +7,8 @@ namespace employee_crud_back_.Interfaces.Services
         Task<Department> GetDepartmentById(int id);
         Task<IEnumerable<Department>> GetDepartments();
         Task<Department> InsertDepartment(Department department);
-        /*
         Task<Department> UpdateDepartment(Department department);
         Task<Department> DeleteDepartment(int id);
-        */
+        
     }
 }
