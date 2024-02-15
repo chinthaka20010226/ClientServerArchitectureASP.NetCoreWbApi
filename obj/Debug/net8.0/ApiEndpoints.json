@@ -1,6 +1,32 @@
 [
   {
     "ContainingType": "employee_crud_back_.Controllers.DepartmentController",
+    "Method": "GetDepartments",
+    "RelativePath": "api/Department",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "employee_crud_back_.Controllers.DepartmentController",
+    "Method": "InsertDepartment",
+    "RelativePath": "api/Department",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "department",
+        "Type": "employee_crud_back_.Models.Entities.Department",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "employee_crud_back_.Controllers.DepartmentController",
     "Method": "GetDepartmentById",
     "RelativePath": "api/Department/{id}",
     "HttpMethod": "GET",

@@ -1,4 +1,8 @@
 using employee_crud_back_.Data;
+using employee_crud_back_.Interfaces.Repositories;
+using employee_crud_back_.Interfaces.Services;
+using employee_crud_back_.Repositories;
+using employee_crud_back_.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -21,7 +25,8 @@ builder.Services.AddDbContext<DataContext>(options =>
 
 // ***************************************************************************
 
-
+builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+builder.Services.AddScoped<IDepartmentService, DepartmentService>();
 
 var app = builder.Build();
 

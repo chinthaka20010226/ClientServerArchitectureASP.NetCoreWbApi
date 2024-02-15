@@ -18,5 +18,20 @@ namespace employee_crud_back_.Services
 
             return department ?? throw new NotFoundException($"department with id {id} not found");
         }
+
+        public async Task<IEnumerable<Department>> GetDepartments()
+        {
+            return await departmentRepository.GetDepartments();
+        }
+
+        public async Task<Department> InsertDepartment(Department newDepartment)
+        {
+            departmentRepository.InsertDepartment(newDepartment);
+            await departmentRepository.Save();
+
+            var insertDepartment = await departmentRepository.GetDepartmentByName(newDepartment.Name);
+
+            return insertDepartment ?? throw new NotFoundException($"Department with name {newDepartment.Name} not found");
+        }
     }
 }

@@ -14,6 +14,21 @@ namespace employee_crud_back_.Repositories
             return await Department.FindAsync(id);
         }
 
+        public async Task<Department?> GetDepartmentByName(string name)
+        {
+            return await Department.FirstOrDefaultAsync(department => department.Name == name);
+        }
+
+        public async Task<IEnumerable<Department>> GetDepartments()
+        {
+            return await Department.ToListAsync();
+        }
+
+        public void InsertDepartment(Department department)
+        {
+            Department.Add(department);
+        }
+
         public async Task Save()
         {
             await dataContext.SaveChangesAsync();
