@@ -80,6 +80,32 @@
   },
   {
     "ContainingType": "employee_crud_back_.Controllers.EmployeeController",
+    "Method": "GetEmployees",
+    "RelativePath": "api/Employee",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "employee_crud_back_.Controllers.EmployeeController",
+    "Method": "InsertEmployee",
+    "RelativePath": "api/Employee",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employee",
+        "Type": "employee_crud_back_.Models.Entities.Employee",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "employee_crud_back_.Controllers.EmployeeController",
     "Method": "GetEmployeeById",
     "RelativePath": "api/Employee/{id}",
     "HttpMethod": "GET",

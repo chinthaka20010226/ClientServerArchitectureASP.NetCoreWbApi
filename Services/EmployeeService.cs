@@ -18,5 +18,20 @@ namespace employee_crud_back_.Services
 
             return employee ?? throw new NotFoundException($"Employee with id {id} not fond");
         }
+
+        public async Task<IEnumerable<Employee>> GetEmployees()
+        {
+            return await employeeRepository.GetEmployees();
+        }
+
+        public async Task<Employee> InsertEmployee(Employee newEmployee)
+        {
+            employeeRepository.InsertEmployee(newEmployee);
+            await employeeRepository.Save();
+
+            var insertEmployee = await employeeRepository.GetEmployeeByFirstName(newEmployee.FName);
+
+            return insertEmployee ?? throw new NotFoundException($"Employee with name {newEmployee.FName} not found");
+        }
     }
 }
