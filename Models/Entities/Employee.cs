@@ -26,7 +26,7 @@ namespace employee_crud_back_.Models.Entities
 
         [Column("dob")]
         [DisplayName("Employee Date of Birthday")]
-        public required DateOnly DOB { get; set; }
+        public required string DOB { get; set; }
 
         [Column("salary")]
         [DisplayName("Employee Salary")]
